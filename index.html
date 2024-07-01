@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="week4.css" />
+  </head>
+  <body>
+    <table border="1" cellpadding="1">
+      <script>
+        var startingPoint = "X";
+        for (let rows = 0; rows <= 10; rows++) {
+          document.write("<tr>");
+
+          for (let cols = 0; cols <= 10; cols++) {
+            document.write("<td>" + rows * cols + "</td>");
+            if (rows == 0 && cols > 0) {
+              startingPoint = startingPoint + cols;
+            } else if (cols == 0 && rows > 0) {
+              startingPoint = startingPoint + rows;
+            }
+          }
+        }
+
+        document.write("</tr>");
+
+        startingPoint = document.getElementsByTagName("tr")[0];
+        startingPoint.getElementsByTagName("td")[0].innerHTML = "X";
+
+        var rows = document.getElementsByTagName("tr")[0];
+        rows.getElementsByTagName("td")[1].innerHTML = "1";
+        rows.getElementsByTagName("td")[2].innerHTML = "2";
+        rows.getElementsByTagName("td")[3].innerHTML = "3";
+        rows.getElementsByTagName("td")[4].innerHTML = "4";
+        rows.getElementsByTagName("td")[5].innerHTML = "5";
+        rows.getElementsByTagName("td")[6].innerHTML = "6";
+        rows.getElementsByTagName("td")[7].innerHTML = "7";
+        rows.getElementsByTagName("td")[8].innerHTML = "8";
+        rows.getElementsByTagName("td")[9].innerHTML = "9";
+        rows.getElementsByTagName("td")[10].innerHTML = "10";
+
+        var cols = document.getElementsByTagName("tr")[1];
+        cols.getElementsByTagName("td")[0].innerHTML = "1";
+        cols2 = document.getElementsByTagName("tr")[2];
+        cols2.getElementsByTagName("td")[0].innerHTML = "2";
+        cols3 = document.getElementsByTagName("tr")[3];
+        cols3.getElementsByTagName("td")[0].innerHTML = "3";
+        cols4 = document.getElementsByTagName("tr")[4];
+        cols4.getElementsByTagName("td")[0].innerHTML = "4";
+        cols5 = document.getElementsByTagName("tr")[5];
+        cols5.getElementsByTagName("td")[0].innerHTML = "5";
+        cols6 = document.getElementsByTagName("tr")[6];
+        cols6.getElementsByTagName("td")[0].innerHTML = "6";
+        cols7 = document.getElementsByTagName("tr")[7];
+        cols7.getElementsByTagName("td")[0].innerHTML = "7";
+        cols8 = document.getElementsByTagName("tr")[8];
+        cols8.getElementsByTagName("td")[0].innerHTML = "8";
+        cols9 = document.getElementsByTagName("tr")[9];
+        cols9.getElementsByTagName("td")[0].innerHTML = "9";
+        cols9 = document.getElementsByTagName("tr")[10];
+        cols9.getElementsByTagName("td")[0].innerHTML = "10";
+      </script>
+    </table>
+  </body>
+</html>
